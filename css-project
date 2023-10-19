@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+    <style>
+        .gradient-background {
+        background: linear-gradient(300deg, #540375, #10A19D, #FFBF00);
+        background-size: 180% 180%;
+        animation: gradient-animation 18s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+        }
+
+        .top, .middle, .contact{display: flex; justify-content: space-evenly; 
+            height: 100vh; align-items: center; 
+            flex-direction: column;}
+        
+        .name{font-family: 'Open Sans', sans-serif;
+font-family: 'Playball', cursive; color: #362FD9;}
+        .proffesion{color: #362FD9;}
+        p {text-align: center;}
+        
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+   
+<div class="top gradient-background">
+    <div class="name"><h1>I'm Jorge</h1></div>
+    <div class="proffesion"><h2>a civil engineer</h2></div>
+    <div class="bridge-img"><img src="./Bridge.png" alt="Bridge" height="400px"></div>
+</div>
+
+<div class="middle">
+    <div class="jorge-photo"><img 
+        src="/Capstone Projects/HTML/1696253653154.jpg" style="border-radius: 50%; margin-top: 80px;" 
+        alt="Profile Photo" height="150px">
+    </div>
+    <div class="greeting"><h2 style="margin: 30px; color: #362FD9;">Hello Everyone!</h2></div>
+    <div class="description">
+        <p>Professional and creative civil engineer with <br>
+            11 years of experience in managing construction<br>
+            projects, road, and geotechnical designs. <br>
+            Excellent reputation for resolving problems<br>
+            and delivering projects with the most<br>
+            high-quality standards. All the projects<br>
+            have been accomplished successfully.</p>
+    </div>
+
+    <div class="contact">
+        <div class="contact-1"><h2 style="margin-top: 50px; color: #362FD9;">Get In Touch</h2></div>
+        <div class="contact-2"><p style="margin-top: 30px;">If you are interested in hiring my services, don't hesitate to contact me in the following link:</p></div>
+    </div>
+    <button type="button" class="btn btn-info" style="margin-bottom: 100px;">Contact me</button>
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="height: 550px;" src="https://static.wixstatic.com/media/28af34_6b3a2eacd8634068b9f242e0c34f7fbf~mv2.jpg/v1/crop/x_20,y_0,w_354,h_323/fill/w_475,h_434,al_c,lg_1,q_80,enc_auto/zapata_JPG.jpg" class="d-block w-100" alt="Structure">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: black; font-weight: 600; font-size: 40px;">Geotechnical design</h5>
+          <p style="color: black;font-weight: 600; font-size: 20px;">For all types of civil constructions in accordance with current regulations. We recommend the appropriate type of foundation and construction methods.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img style="height: 550px;" src="https://static.wixstatic.com/media/28af34_a28eb7864c124156a2844bcd11e36ae9~mv2.png/v1/crop/x_111,y_0,w_356,h_325/fill/w_475,h_434,al_c,lg_1,q_85,enc_auto/pavi.png" class="d-block w-100" alt="Road">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: black; font-weight: 600; font-size: 40px;">Pavement design</h5>
+          <p style="color: black; font-weight: 600; font-size: 20px;">Through the use of empirical-mechanistic methods, the most appropriate pavement structure for the project is designed.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img style="height: 550px; " src="https://static.wixstatic.com/media/28af34_d0a70ec22414470a9317b796e9559d94~mv2.jpg/v1/crop/x_88,y_0,w_383,h_350/fill/w_475,h_434,al_c,lg_1,q_80,enc_auto/inter_JPG.jpg" class="d-block w-100" alt="Engineers talking">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: 40px; color: black;">Civil works audit</h5>
+          <p style="font-size: 20px; color: black;">To control, review and supervise all stages of a project, effectively and permanently, in order to ensure that all contractual specifications and technical requirements are met.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<footer class="py-3 my-4 gradient-background">
+    <ul class="nav justify-content-center pb-3 mb-3">
+      <li class="nav-item"><a href="https://www.linkedin.com/in/juparela/" class="nav-link px-2 text-body-secondary" >Linkedin</a></li>
+      <li class="nav-item"><a href="https://twitter.com/jorgeuparela" class="nav-link px-2 text-body-secondary">Twitter</a></li>
+      <li class="nav-item"><a href="https://instagram.com/jorgeuparela" class="nav-link px-2 text-body-secondary">Instagram</a></li>
+      
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Jorge Uparela, Inc</p>
+  </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
